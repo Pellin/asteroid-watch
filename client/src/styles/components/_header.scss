@@ -1,0 +1,90 @@
+.header-container {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.header {
+  background:white; 
+  font-family: 'Faster One', cursive;
+  margin: 0;
+  padding: 0.5rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.header-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header-title {
+  color: black;
+  font-size: 3rem;
+  white-space: pre;
+
+  @media (max-width: 644px) {
+    font-size: 1.8rem;
+  }
+}
+
+.sub-header {
+  background: red;
+  margin: 0;
+  opacity: 0.95;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.sub-header-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.sub-header-title {
+  font-size: 1.2rem;
+}
+
+.sub-header-form {
+  font-family: courier;
+  margin: 0;
+  padding: 0.2rem 0.2rem 0 0.2rem;
+
+  select {
+    appearance: none;
+    background: red;
+    border: none;
+    color: white;
+    font-family: courier;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.2rem 0 0 0;
+  }
+
+  select:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 644px) {
+    font-size: 1.2rem;
+    font-weight: 100;
+
+    select {
+      font-size: 1.2rem;
+      font-weight: 100;
+    }
+  }
+}

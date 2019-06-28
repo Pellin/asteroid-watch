@@ -1,0 +1,64 @@
+.asteroids-list {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-top: 15rem;
+
+  @media (min-width: 644px) {
+    padding-top: 16rem;
+  }
+}
+
+.asteroid-item {
+  flex-wrap: nowrap;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  transition: 100ms opacity;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    margin: 1.6rem;
+    width: 45%;
+  }
+  @media (min-width: 1024px) {
+    flex-wrap: wrap;
+    margin: 1.6rem;
+    width: 30%;
+  }
+}
+
+.asteroid-item:hover {
+  opacity: 1;
+}
+
+.asteroid-item__header {
+  align-items: center;
+  background: white;
+  color: gray;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Londrina Sketch', cursive;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  h1 {
+    margin: 0;
+    padding: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    margin: 0 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.asteroid-item__body {
+  background: black;
+  overflow: hidden;
+  padding: 1rem;
+}
