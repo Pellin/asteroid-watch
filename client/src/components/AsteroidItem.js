@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import numeral from 'numeral';
 
 class AsteroidItem extends Component {
   render() {
@@ -9,8 +10,16 @@ class AsteroidItem extends Component {
           {this.props.asteroid.designation}
         </div>
         <div className="modal__body">
-          <p>This asteroid is {this.props.asteroid.estimated_diameter.meters.estimated_diameter_max} meter in diameter.</p>
-          <h3>Close approaches:</h3>
+          <h2>Close approaches:</h2>
+          {this.props.asteroid.close_approach_data.map((data => {
+            return (
+              <div key={data.relative_velocity.miles_per_hour} className="approach-list">
+                <h3>{data.close_approach_date}:</h3>
+                  <p> Miss distance to {data.orbiting_body}: {numeral(data.miss_distance.kilometers).format('0,0')} km</p>
+                <p>Velocity: {numeral(data.relative_velocity.kilometers_per_second).format('0,0.00')} kilometers per second</p>
+                </div>
+            )
+          }))}
         </div>
       </div>
     );

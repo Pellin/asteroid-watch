@@ -1,3 +1,7 @@
+.ReactModal__Content {
+  overflow-y: auto;
+}
+
 .ReactModalPortal .ReactModal__Overlay {
   align-items: center;
   display: flex;
@@ -11,6 +15,8 @@
 
 .ReactModalPortal .ReactModal__Overlay--after-open {
   opacity: 1;
+  position: absolute;
+  top: 4rem;
 }
 
 .ReactModalPortal .ReactModal__Overlay--before-close {
@@ -19,21 +25,44 @@
 
 .modal {
   border-radius: 10px;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  max-height: 45vh;
+  max-width: 90%;
   outline: none;
   text-align: center;
-  width: 80vw;
+  width: 90vw;
+  z-index: 20;
+
+  @media (min-width: 425px) {
+    max-width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 35%;
+  }
 }
 
 .modal__header {
   background: white;
+  border-radius: 4px 4px 0 0;
   color: gray;
   font-family: 'Londrina Sketch', cursive;
   font-size: 2rem;
   font-weight: 700;
-  height: 5%;
-  margin: 0;
+  margin: auto;
   padding: 1rem 0;
+  position: fixed;
+  width: 90vw;
+
+  @media (min-width: 425px) {
+    max-width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 35%;
+  }
 }
 
 .modal__body {
@@ -41,6 +70,7 @@
   border-radius: 0 0 4px 4px;
   height: 95%;
   margin: 0;
-  padding: 2rem;
+  padding: 4rem 2rem 1.5rem;
   text-align: left;
 }
+
