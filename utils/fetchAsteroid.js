@@ -18,4 +18,4 @@ const fetchAsteroid = (id) => {
   });
 }
 
-module.exports = { fetchAsteroid };
+module.exports = fetchAsteroid;

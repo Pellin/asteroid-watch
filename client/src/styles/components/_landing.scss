@@ -19,19 +19,40 @@
   display: flex;
   justify-content: space-evenly;
   margin: auto;
-  padding: 2rem;
 }
 
 .landing-link {
   color: white;
-  font-size: 3rem;
-  margin: 2rem;
+  margin: 0 0.5rem;
   text-decoration: none;
+}
 
-  @media (max-width: 770px) {
+.landing-link__header {
+  font-size: 1rem;
+  padding: 0 1rem;
+
+  h2 {
+    margin: 0;
+  }
+
+  @media (min-width: 770px) {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+  @media (min-width: 644px) {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    padding: 0 1rem;
+  }
+}
+
+.landing-link__body {
+  font-size: 1rem;
+
+  @media (min-width: 770px) {
     font-size: 2rem;
   }
-  @media (max-width: 644px) {
+  @media (min-width: 644px) {
     font-size: 1.5rem;
     margin: 1.5rem;
   }

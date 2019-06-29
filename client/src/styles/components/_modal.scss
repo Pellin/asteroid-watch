@@ -28,7 +28,9 @@
 .modal__header {
   background: white;
   color: gray;
+  font-family: 'Londrina Sketch', cursive;
   font-size: 2rem;
+  font-weight: 700;
   height: 5%;
   margin: 0;
   padding: 1rem 0;
@@ -40,4 +42,5 @@
   height: 95%;
   margin: 0;
   padding: 2rem;
+  text-align: left;
 }

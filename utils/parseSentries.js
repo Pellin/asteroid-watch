@@ -16,4 +16,4 @@ const parseSentries = (data) => {
   return asteroids;
 };
 
-module.exports = { parseSentries };
+module.exports = parseSentries;

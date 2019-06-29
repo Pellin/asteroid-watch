@@ -14,14 +14,31 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing-headline">
-        <h1>THE TRUTH IS OUT THERE</h1>
         <div className="landing-link-container">
-          <Link to="/sentries" className="landing-link">
-            NASA monitored asteroids
-          </Link>
-          <Link to="/current" className="landing-link">
-            Current near Earth asteroids
-          </Link>
+          <div className="landing-link">
+            <div className="landing-link__header">
+              <Link to="/sentries" className="landing-link">
+                <h2>NASA monitored asteroids</h2>
+              </Link>
+            </div>
+            <div className="landing-link__body">
+              <p>
+                A list of asteroids currently listed as sentry objects by NASA
+              </p>
+            </div>
+          </div>
+          <div className="landing-link">
+            <div className="landing-link__header">
+              <Link to="/current" className="landing-link">
+                <h2>Current near Earth asteroids</h2>
+              </Link>
+            </div>
+            <div className="landing-link__body">
+              <p>
+                A list of asteroids currently close to Earth
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -26,4 +26,4 @@ const parseCurrent = (data) => {
   }));
 };
 
-module.exports = { parseCurrent };
+module.exports = parseCurrent;

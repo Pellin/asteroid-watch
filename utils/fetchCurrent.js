@@ -18,4 +18,4 @@ const fetchCurrent = () => {
   });
 };
 
-module.exports = { fetchCurrent };
+module.exports = fetchCurrent;

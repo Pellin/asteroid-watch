@@ -1,11 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const { fetchSentries } = require('./utils/fetchSentries');
-const { parseSentries } = require('./utils/parseSentries');
-const { fetchCurrent } = require('./utils/fetchCurrent');
-const { parseCurrent } = require('./utils/parseCurrent');
-const { fetchAsteroid } = require('./utils/fetchAsteroid');
+const fetchSentries = require('./utils/fetchSentries');
+const parseSentries = require('./utils/parseSentries');
+const fetchCurrent = require('./utils/fetchCurrent');
+const parseCurrent = require('./utils/parseCurrent');
+const fetchAsteroid = require('./utils/fetchAsteroid');
 
 const app = express();
 const PORT = process.env.PORT || 5000;

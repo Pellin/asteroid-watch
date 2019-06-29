@@ -15,18 +15,20 @@
   font-size: 1.5rem;
   margin: 1rem;
   margin-bottom: 1rem;
-  opacity: 0.8;
-  transition: 100ms opacity;
   width: 100%;
 
   @media (min-width: 768px) {
     flex-wrap: wrap;
     margin: 1.6rem;
+    opacity: 0.8;
+    transition: 100ms opacity;
     width: 45%;
   }
   @media (min-width: 1024px) {
     flex-wrap: wrap;
     margin: 1.6rem;
+    opacity: 0.8;
+    transition: 100ms opacity;
     width: 30%;
   }
 }

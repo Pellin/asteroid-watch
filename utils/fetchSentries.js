@@ -18,4 +18,4 @@ const fetchSentries = () => {
   });
 };
 
-module.exports = { fetchSentries };
+module.exports = fetchSentries;
