@@ -33,3 +33,11 @@ export const sortByImpactProb = () => ({
 export const sortByTime = () => ({
   type: 'SORT_BY_TIME'
 });
+
+export const sortByProximity = () => ({
+  type: 'SORT_BY_PROXIMITY'
+});
+
+export const sortBySpeed = () => ({
+  type: 'SORT_BY_SPEED'
+});

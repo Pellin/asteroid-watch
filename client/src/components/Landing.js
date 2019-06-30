@@ -23,7 +23,9 @@ class Landing extends Component {
             </div>
             <div className="landing-link__body">
               <p>
-                A list of asteroids currently listed as sentry objects by NASA
+                <i>
+                  A list of asteroids currently listed as sentry objects by NASA
+                </i>
               </p>
             </div>
           </div>
@@ -35,7 +37,7 @@ class Landing extends Component {
             </div>
             <div className="landing-link__body">
               <p>
-                A list of asteroids currently close to Earth
+                <i>A list of asteroids currently in close proximity to Earth</i>
               </p>
             </div>
           </div>

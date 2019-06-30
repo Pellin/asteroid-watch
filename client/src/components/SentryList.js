@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import sortSentries from '../actions/sortSentries';
 import SentryItem from './SentryItem';
+import { sortBySize } from '../actions/index';
 
 class SentryList extends Component {
+  componentDidMount() {
+    if (this.props.filters.sortBy !== 'Size') {
+      this.props.sortBySize();
+    }  
+  }
   render() {
+    console.log(this.props.filters.sortBy);
     return (
       <div className="asteroids-list">
         {this.props.sentries.map(sentry => {
@@ -20,4 +28,8 @@ const mapStateToProps = state => ({
   filters: state.filters
 });
 
-export default connect(mapStateToProps)(SentryList);
+const mapDispatchToProps = dispatch => ({
+  sortBySize: () => dispatch(sortBySize()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SentryList);

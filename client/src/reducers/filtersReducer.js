@@ -19,6 +19,16 @@ export default function(state = defaultState, action) {
           ...state,
           sortBy: 'Time'
         }
+    case 'SORT_BY_SPEED':
+        return {
+          ...state,
+          sortBy: 'Speed'
+        }
+    case 'SORT_BY_PROXIMITY':
+        return {
+          ...state,
+          sortBy: 'Proximity'
+        }
     default:
       return state
   }
