@@ -36,7 +36,7 @@ class SubHeader extends Component {
             {this.props.location.pathname !== '/' && (
               <div className="sub-header-form">
                 <form>
-                  <label>Sort by:</label>
+                  <label>Sort by: </label>
                   {this.props.location.pathname === '/sentries' && (
                     <select
                       value={this.props.filters.sortBy}
