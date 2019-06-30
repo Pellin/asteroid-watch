@@ -1,14 +1,16 @@
-const parseCurrent = (data) => {
+const parseCurrent = data => {
   let asteroids = [];
   Object.values(data).forEach(array => {
-    asteroids.push(...array)
+    asteroids.push(...array);
   });
-  return asteroids
-    .map(({ name,
+
+  return asteroids.map(
+    ({
+      name,
       id,
       nasa_jpl_url,
-      absolute_magnitude_h, 
-      estimated_diameter,  
+      absolute_magnitude_h,
+      estimated_diameter,
       is_potentially_hazardous_asteroid,
       close_approach_data,
       orbital_data,
@@ -23,7 +25,8 @@ const parseCurrent = (data) => {
       closeApproach: close_approach_data,
       orbitData: orbital_data,
       sentry: is_sentry_object
-  }));
+    })
+  );
 };
 
 module.exports = parseCurrent;

@@ -22,7 +22,7 @@ class CurrentItem extends Component {
   render() {
     return (
       <div className="asteroid-item" key={this.props.name}>
-        <div  onClick={this.openModal} className="asteroid-item__header">
+        <div onClick={this.openModal} className="asteroid-item__header">
           <h1>{this.props.name}</h1>
           <h3>
             {this.props.orbitData.orbit_class &&

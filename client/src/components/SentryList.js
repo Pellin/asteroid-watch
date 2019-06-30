@@ -9,10 +9,9 @@ class SentryList extends Component {
   componentDidMount() {
     if (this.props.filters.sortBy !== 'Size') {
       this.props.sortBySize();
-    }  
+    }
   }
   render() {
-    console.log(this.props.filters.sortBy);
     return (
       <div className="asteroids-list">
         {this.props.sentries.map(sentry => {
@@ -29,7 +28,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  sortBySize: () => dispatch(sortBySize()),
+  sortBySize: () => dispatch(sortBySize())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SentryList);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SentryList);

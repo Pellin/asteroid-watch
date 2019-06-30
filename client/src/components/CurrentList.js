@@ -12,7 +12,6 @@ class CurrentList extends Component {
     }  
   }
   render() {
-    console.log(this.props.filters.sortBy);
     return (
       <div className="asteroids-list">
         {this.props.current.map(curr => {
