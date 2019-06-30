@@ -56,14 +56,18 @@
 }
 
 .sub-header-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
+
+  @media (min-width: 644px) {
+   font-size: 1.2rem;
+  }
 }
 
 .sub-header-form {
   font-family: courier;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
-  padding: 0.2rem 0.2rem 0 0.2rem;
+  padding: 0;
 
   select {
     appearance: none;
@@ -71,9 +75,9 @@
     border: none;
     color: white;
     font-family: courier;
-    font-size: 1.2rem;
+    font-size: 1rem;
     outline: none;
-    padding: 0.2rem 0 0 0;
+    padding: 0;
   }
 
   select:hover {
